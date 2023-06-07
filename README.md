@@ -1,4 +1,4 @@
-# Project: Airflow Twitter Data Extraction and CSV Storage
+# Project: Twitter ETL ON AWS EC2 WITH Airflow 
 
 ## Description:
 The project involved installing Apache Airflow on an EC2 instance in AWS and developing a Python script to extract today's 10 tweets containing specific keywords from the Twitter API. The extracted tweets were then saved to a CSV file. Additionally, a DAG (Directed Acyclic Graph) file was created to automate the execution of the data extraction function on a daily basis and save the data to the EC2 instance.
