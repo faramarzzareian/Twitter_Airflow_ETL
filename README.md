@@ -86,4 +86,11 @@ Log in using the admin username and the password you set during the admin user c
         Monitored the Airflow UI or used the Airflow CLI to verify that the DAG was running successfully.
         Checked the specified directory on the EC2 instance to ensure that the extracted data was being saved to the CSV file on a daily basis.
 
-###### The completed project allows for the automatic extraction of tweets containing specific keywords from the Twitter API on a daily schedule, with the data being stored in a CSV file on the EC2 instance. This setup can be further customized and expanded to include additional functionality or data processing as per your requirements.
+###### The completed project allows for the automatic extraction of tweets containing specific keywords from the Twitter API on a daily schedule, with 
+        
+## Twitter_etl.py file:          
+      the data being stored in a CSV file on the EC2 instance. This setup can be further customized and expanded to include additional functionality or data processing as per your requirements.
+      The address s3://your bucket name/tweets.csv refers to a location on Amazon S3, a highly scalable and reliable cloud storage service. 
+        Storing the CSV file in this S3 bucket has several advantages. First, it provides a durable and secure storage solution, ensuring the data's safety even in the event of hardware failures or other disruptions. 
+        Second, it allows for easy accessibility and sharing of the data across different systems and applications. Third, S3 offers high scalability, enabling the storage of large amounts of data without worrying about storage capacity limitations. 
+        Lastly, leveraging S3 integrates well with other AWS services, allowing for seamless data processing, analysis, and integration with other tools and services within the AWS ecosystem. By using the s3://your bucket name/tweets.csv address, the CSV file can be efficiently stored, managed, and accessed in a reliable and scalable manner, making it an optimal choice for saving the data on an EC2 instance.
